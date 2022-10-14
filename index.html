@@ -8,7 +8,74 @@
     <title>Painting App</title>
   </head>
   <body>
-    <canvas class="canvas"</canvas>
+    <canvas class="canvas"></canvas>
+    <input id="line-width" type="range" min="1" max="10" value="5" step=".5" />
+    <input type="color" id="color" />
+    <div class="colors">
+      <div
+        class="color-option"
+        style="background-color: #e84118"
+        data-color="#e84118"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff9f43"
+        data-color="#ff9f43"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fbc531"
+        data-color="#fbc531"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #4cd137"
+        data-color="#4cd137"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #00a8ff"
+        data-color="#00a8ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #487eb0"
+        data-color="#487eb0"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #273c75"
+        data-color="#273c75"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #7f8fa6"
+        data-color="#7f8fa6"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #9c88ff"
+        data-color="#9c88ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #353b48"
+        data-color="#353b48"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f5f6fa"
+        data-color="#f5f6fa"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #1e272e"
+        data-color="#1e272e"
+      ></div>
+    </div>
+    <button id="mode-btn">FILL</button>
+    <button id="destroy-btn">Destroy</button>
+    <button id="eraser-btn">Erase</button>
     <script src="app.js"></script>
   </body>
 </html>
