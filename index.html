@@ -8,10 +8,8 @@
     <title>Painting App</title>
   </head>
   <body>
-    <canvas class="canvas"></canvas>
-    <input id="line-width" type="range" min="1" max="10" value="5" step=".5" />
-    <input type="color" id="color" />
-    <div class="colors">
+    <div class="color-options">
+      <input type="color" id="color" />
       <div
         class="color-option"
         style="background-color: #e84118"
@@ -57,25 +55,34 @@
         style="background-color: #9c88ff"
         data-color="#9c88ff"
       ></div>
+
       <div
         class="color-option"
-        style="background-color: #353b48"
-        data-color="#353b48"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #f5f6fa"
-        data-color="#f5f6fa"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #1e272e"
-        data-color="#1e272e"
+        style="background-color: #000000"
+        data-color="#000000"
       ></div>
     </div>
-    <button id="mode-btn">FILL</button>
-    <button id="destroy-btn">Destroy</button>
-    <button id="eraser-btn">Erase</button>
+    <canvas class="canvas"></canvas>
+    <div class="btns">
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step=".5"
+      />
+
+      <button id="mode-btn">FILL</button>
+      <button id="destroy-btn">Destroy</button>
+      <button id="eraser-btn">Erase</button>
+      <label for="file">
+        Add Photo
+        <input type="file" accept="image/*" id="file"
+      /></label>
+      <input type="text" placeholder="Add text here... :)" id="text" />
+      <button id="save">Save Image</button>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
