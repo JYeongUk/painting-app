@@ -4,6 +4,8 @@
 
 ## 📸 App View
 
+<p align="center"><img src="img/img.png" width="600" /></p>
+
 ## 🧑‍💻 기술 스택
 
 1. HTML

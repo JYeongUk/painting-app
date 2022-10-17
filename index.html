@@ -64,24 +64,31 @@
     </div>
     <canvas class="canvas"></canvas>
     <div class="btns">
-      <input
-        id="line-width"
-        type="range"
-        min="1"
-        max="10"
-        value="5"
-        step=".5"
-      />
+      <label>
+        <span>두께 조절</span>
+        <input
+          id="line-width"
+          type="range"
+          min="1"
+          max="10"
+          value="5"
+          step=".5"
+        />
+      </label>
 
-      <button id="mode-btn">FILL</button>
-      <button id="destroy-btn">Destroy</button>
-      <button id="eraser-btn">Erase</button>
+      <button id="mode-btn">채우기</button>
+      <button id="destroy-btn">전체 삭제</button>
+      <button id="eraser-btn">지우개</button>
       <label for="file">
-        Add Photo
+        이미지 추가하기
         <input type="file" accept="image/*" id="file"
       /></label>
-      <input type="text" placeholder="Add text here... :)" id="text" />
-      <button id="save">Save Image</button>
+      <input
+        type="text"
+        placeholder="텍스트 입력후 화면을 더블클릭 하세요"
+        id="text"
+      />
+      <button id="save">저장</button>
     </div>
     <script src="app.js"></script>
   </body>

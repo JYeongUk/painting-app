@@ -55,10 +55,10 @@ function onColorClick(e) {
 function onModeClick() {
   if (isFilling) {
     isFilling = false;
-    modeBtn.innerText = "FILL";
+    modeBtn.innerText = "채우기";
   } else {
     isFilling = true;
-    modeBtn.innerText = "DRAW";
+    modeBtn.innerText = "그리기";
   }
 }
 
@@ -76,7 +76,7 @@ function onDestroyClick() {
 function onEraserClick() {
   ctx.strokeStyle = "white";
   isFilling = false;
-  modeBtn.innerText = "FILL";
+  modeBtn.innerText = "채우기";
 }
 
 function onFileChange(e) {
